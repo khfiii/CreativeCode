@@ -1,6 +1,15 @@
 <?php
 
+use App\Livewire\Home;
+use App\Livewire\Kontak;
+use App\Livewire\Produk;
+use App\Livewire\Tentang;
+use App\Livewire\Testimoni;
 use Illuminate\Support\Facades\Route;
+
+
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +22,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/', function(){
     return view('home');
-});
+})->name('home');
+
+
+Route::get('/produk', Produk::class)->name('produk');
+Route::get('/testimoni', Testimoni::class)->name('testimoni');
+Route::get('/tentang-kami', Tentang::class)->name('tentang');
+Route::get('/kontak-kami', Kontak::class)->name('kontak');

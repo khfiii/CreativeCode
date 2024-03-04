@@ -7,7 +7,7 @@
     @vite(['resources/css/app.css'])
 
 
-    <title>{{ $title ?? 'Mouna' }}</title>
+    <title>{{ $title ?? 'Evolusi Kode' }}</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

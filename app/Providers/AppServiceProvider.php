@@ -21,6 +21,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        Blade::component('layout-main', app::class);
+        Blade::anonymousComponentPath(resource_path('views/components/layouts'), 'website');
+
     }
 }
