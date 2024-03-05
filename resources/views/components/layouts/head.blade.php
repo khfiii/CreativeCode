@@ -1,15 +1,16 @@
 
 <div class="navbar bg-base-100">
     <div class="flex-1">
-      <a class="btn btn-ghost text-xl">{{ config('app.name') }}</a>
+    <div class="flex flex-col -space-y-3 justify-center items-center btn btn-ghost">
+        <a class="text-[#47c2b8] text-2xl">{{ config('app.name') }}</a>
+        <small class="font-light">We'are ready for work</small>
+    </div>
     </div>
     <div class="flex-none">
       <ul class="menu menu-horizontal px-1 font-poppins font-medium">
-        <li class="hover:text-[#c04cfb]"><a href="{{ route('home') }}" wire:navigate>Home</a></li>
-        <li class="hover:text-[#c04cfb]"><a href="{{ route('produk') }}" wire:navigate>Produk</a></li>
-        <li class="hover:text-[#c04cfb]"><a href="{{ route('testimoni') }}" wire:navigate>Testimoni</a></li>
-        <li class="hover:text-[#c04cfb]"><a href="{{ route('tentang') }}" wire:navigate>Tentang</a></li>
-        <li class="hover:text-[#c04cfb]"><a href="{{ route('kontak') }}" wire:navigate.hover>Kontak</a></li>
+        @foreach (['home', 'produk', 'testimoni', 'tentang', 'kontak'] as $item)
+         <li class="hover:text-[#c04cfb] {{ request()->routeIs($item) ? 'text-[#c04cfb]' : '' }}"><a href="{{ route($item) }}" wire:navigate>{{ $item }}</a></li>
+        @endforeach
       </ul>
     </div>
   </div>

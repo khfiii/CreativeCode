@@ -17,7 +17,9 @@
 </head>
 
 <body>
-    {{ $slot }}
+<div class="flex justify-center py-4 px-28">
+    <div class="w-full">{{ $slot }}</div>
+</div>
 </body>
 
 </html>
