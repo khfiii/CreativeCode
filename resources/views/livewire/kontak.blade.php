@@ -1,3 +1,3 @@
 <div>
-    <x-website::head/>
+Hi, ini adalah kontak kami
  </div>

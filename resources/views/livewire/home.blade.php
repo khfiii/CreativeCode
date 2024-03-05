@@ -1,3 +1,5 @@
 <div>
-    {{-- Do your work, then step back. --}}
+
+Ini adalah home
+
 </div>

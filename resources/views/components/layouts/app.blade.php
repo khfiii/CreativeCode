@@ -17,9 +17,13 @@
 </head>
 
 <body>
-<div class="flex justify-center py-4 px-28">
-    <div class="w-full">{{ $slot }}</div>
-</div>
+
+<nav class="pt-4 px-24">
+  <x-website::head/>
+</nav>
+
+
+
 </body>
 
 </html>
