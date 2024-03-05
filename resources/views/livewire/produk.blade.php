@@ -1,3 +1,4 @@
 <div>
-   <x-website::head/>
+    <x-website::head/>
+
 </div>
