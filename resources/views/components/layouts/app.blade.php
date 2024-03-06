@@ -22,6 +22,9 @@
   <x-website::head/>
 </nav>
 
+<div class="md:mx-28 md:mt-16">
+    {{ $slot }}
+</div>
 
 
 </body>
