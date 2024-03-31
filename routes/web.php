@@ -33,5 +33,6 @@ use DefStudio\Telegraph\Keyboard\Keyboard;
 Route::get('/', Home::class)->name('home');
 Route::get('/produk', Produk::class)->name('produk');
 Route::get('/testimoni', Testimoni::class)->name('testimoni');
-Route::get('/kontak', Kontak::class)->name('kontak');
+Route::get('/tentang-kami', Tentang::class)->name('tentang');
+Route::get('/kontak-kami', Kontak::class)->name('kontak');
 Route::get('/lepwer', Lepwer::class)->name('lepwire');
