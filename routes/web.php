@@ -2,6 +2,7 @@
 
 use App\Livewire\Home;
 use App\Livewire\Kontak;
+use App\Livewire\Lepwer;
 use App\Livewire\Produk;
 use App\Livewire\Tentang;
 use App\Livewire\Testimoni;
@@ -35,3 +36,4 @@ Route::get('/produk', Produk::class)->name('produk');
 Route::get('/testimoni', Testimoni::class)->name('testimoni');
 Route::get('/tentang-kami', Tentang::class)->name('tentang');
 Route::get('/kontak-kami', Kontak::class)->name('kontak');
+Route::get('/lepwer', Lepwer::class)->name('lepwire');
