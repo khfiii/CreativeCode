@@ -9,13 +9,13 @@ document.addEventListener('alpine:init', ()=>{
             loop: false,
             startDelay:value,
           })
-          .move(-4)
-          .delete(1)
-          .type(' A')
+        //   .move(-4)
+        //   .delete(1)
+        //   .type(' A')
           .move(null, { to: "END" })
           .go();
 
-        //   instance.destroy();
+          instance.destroy();
 
 
 

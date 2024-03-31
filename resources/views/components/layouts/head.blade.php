@@ -3,13 +3,13 @@
     <div class="navbar bg-base-100 hidden md:flex md:px-[5rem]">
         <div class="flex-1">
             <div class="flex flex-col -space-y-3 justify-center items-center ps-2 font-poppins font-bold">
-                <a class="text-white text-2xl">{{ config('app.name') }}</a>
+                <a class="text-white text-2xl">{{ env('APP_NAME') }}</a>
             </div>
         </div>
         <div class="flex-none">
             <ul class="menu menu-horizontal px-1 font-poppins font-bold">
-                @foreach (['home' => 'Beranda', 'produk' => 'Produk', 'testimoni' => 'Testimoni', 'tentang' => 'Tentang', 'kontak' => 'Kontak'] as $item => $value)
-                    <li class="hover:text-[#6724f4] {{ request()->routeIs($item) ? 'text-[#6724f4]' : '' }}"><a
+                @foreach (['home' => 'Beranda', 'produk' => 'Layanan', 'testimoni' => 'Testimoni', 'tentang' => 'Tentang', 'kontak' => 'Kontak'] as $item => $value)
+                    <li class="hover:text-[#5c3463] {{ request()->routeIs($item) ? 'text-[#5c3463]' : '' }}"><a
                             href="{{ route($item) }}" wire:navigate>{{ $value }}</a></li>
                 @endforeach
             </ul>
@@ -55,7 +55,7 @@
                         </div>
                         <div class="col-span-10">
                             <span
-                                class="hover:text-[#6724f4] {{ request()->routeIs('home') ? 'text-[#6724f4]' : '' }}"><a
+                                class="hover:text-[#5c3463] {{ request()->routeIs('home') ? 'text-[#5c3463]' : '' }}"><a
                                     href="{{ route('home') }}" wire:navigate>Beranda</a></span>
                         </div>
 
@@ -64,15 +64,15 @@
                         </div>
                         <div class="col-span-10">
                             <span
-                                class="hover:text-[#6724f4] {{ request()->routeIs('produk') ? 'text-[#6724f4]' : '' }}"><a
-                                    href="{{ route('produk') }}" wire:navigate>Produk</a></span>
+                                class="hover:text-[#5c3463] {{ request()->routeIs('produk') ? 'text-[#5c3463]' : '' }}"><a
+                                    href="{{ route('produk') }}" wire:navigate>Layanan</a></span>
                         </div>
                         <div class="col-span-2">
                             <x-heroicon-o-chat-bubble-left-right class="w-5" />
                         </div>
                         <div class="col-span-10">
                             <span
-                                class="hover:text-[#6724f4] {{ request()->routeIs('testimoni') ? 'text-[#6724f4]' : '' }}"><a
+                                class="hover:text-[#5c3463] {{ request()->routeIs('testimoni') ? 'text-[#5c3463]' : '' }}"><a
                                     href="{{ route('testimoni') }}" wire:navigate>Testimoni</a></span>
                         </div>
                         <div class="col-span-2">
@@ -80,7 +80,7 @@
                         </div>
                         <div class="col-span-10">
                             <span
-                                class="hover:text-[#6724f4] {{ request()->routeIs('tentang') ? 'text-[#6724f4]' : '' }}"><a
+                                class="hover:text-[#5c3463] {{ request()->routeIs('tentang') ? 'text-[#5c3463]' : '' }}"><a
                                     href="{{ route('tentang') }}" wire:navigate>Tentang</a></span>
                         </div>
                         <div class="col-span-2">
@@ -88,7 +88,7 @@
                         </div>
                         <div class="col-span-10">
                             <span
-                                class="hover:text-[#6724f4] {{ request()->routeIs('kontak') ? 'text-[#6724f4]' : '' }}"><a
+                                class="hover:text-[#5c3463] {{ request()->routeIs('kontak') ? 'text-[#5c3463]' : '' }}"><a
                                     href="{{ route('kontak') }}" wire:navigate>Kontak</a></span>
                         </div>
                     </div>
