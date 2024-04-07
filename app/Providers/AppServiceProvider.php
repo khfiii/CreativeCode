@@ -22,9 +22,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        // if(config("app.env") === 'local'){
+        // if(app()->isProduction()){
         //     URL::forceScheme('https');
         // }
+
         Blade::anonymousComponentPath(resource_path('views/components/layouts'), 'website');
 
     }

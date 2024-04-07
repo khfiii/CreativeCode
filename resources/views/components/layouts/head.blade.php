@@ -12,6 +12,7 @@
                     <li class="hover:text-[#5c3463] {{ request()->routeIs($item) ? 'text-[#5c3463]' : '' }}"><a
                             href="{{ route($item) }}" wire:navigate>{{ $value }}</a></li>
                 @endforeach
+                <li class="hover:text-[#5c3463]"><a href="{{ route('login') }}" wire:navigate>Login</a></li>
             </ul>
         </div>
     </div>
@@ -49,7 +50,7 @@
             <div class="grid grid-cols-2 items-center p-2 absolute">
 
                 <div class="flex flex-col gap-y-6">
-                    <div class="grid grid-cols-12 gap-y-2 gap-x-4 items-center font-poppins font-semibold text-sm">
+                    <div class="grid grid-cols-12 gap-y-2 gap-x-4 items-center font-poppins font-medium text-sm">
                         <div class="col-span-2">
                             <x-heroicon-o-home class="w-5" />
                         </div>
@@ -90,6 +91,20 @@
                             <span
                                 class="hover:text-[#5c3463] {{ request()->routeIs('kontak') ? 'text-[#5c3463]' : '' }}"><a
                                     href="{{ route('kontak') }}" wire:navigate>Kontak</a></span>
+                        </div>
+                        <div class="col-span-2">
+
+                        </div>
+                        <div class="col-span-10">
+                            <span class="hover:text-[#5c3463]"><a href="{{ route('login') }}"
+                                    wire:navigate>Login</a></span>
+                        </div>
+                        <div class="col-span-2">
+
+                        </div>
+                        <div class="col-span-10">
+                            <span class="hover:text-[#5c3463]"><a href="{{ route('register') }}"
+                                    wire:navigate>Register</a></span>
                         </div>
                     </div>
                 </div>

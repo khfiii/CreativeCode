@@ -15,7 +15,7 @@
                     Layanan
                     <x-uni-search-alt-o class="w-5" />
                 </a>
-                <a href="#"
+                <a href="https://t.me/creative_code_bot"
                     class="btn btn-outline w-full rounded-md  border-[#ba68c8] text-white font-normal gap-2">Konsultasi
                     <x-uni-telegram-alt-thin class="w-5" />
                 </a>
