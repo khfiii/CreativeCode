@@ -8,7 +8,7 @@
         </div>
         <div class="flex-none">
             <ul class="menu menu-horizontal px-1 font-poppins font-bold">
-                @foreach (['home' => 'Beranda', 'produk' => 'Layanan', 'testimoni' => 'Testimoni', 'tentang' => 'Tentang', 'kontak' => 'Kontak'] as $item => $value)
+                @foreach (['home' => 'Home', 'produk' => 'Services', 'testimoni' => 'Testimonials', 'tentang' => 'About', 'kontak' => 'Contact'] as $item => $value)
                     <li class="hover:text-[#5c3463] {{ request()->routeIs($item) ? 'text-[#5c3463]' : '' }}"><a
                             href="{{ route($item) }}" wire:navigate>{{ $value }}</a></li>
                 @endforeach
@@ -57,7 +57,7 @@
                         <div class="col-span-10">
                             <span
                                 class="hover:text-[#5c3463] {{ request()->routeIs('home') ? 'text-[#5c3463]' : '' }}"><a
-                                    href="{{ route('home') }}" wire:navigate>Beranda</a></span>
+                                    href="{{ route('home') }}" wire:navigate>Home</a></span>
                         </div>
 
                         <div class="col-span-2">
@@ -66,7 +66,7 @@
                         <div class="col-span-10">
                             <span
                                 class="hover:text-[#5c3463] {{ request()->routeIs('produk') ? 'text-[#5c3463]' : '' }}"><a
-                                    href="{{ route('produk') }}" wire:navigate>Layanan</a></span>
+                                    href="{{ route('produk') }}" wire:navigate>Services</a></span>
                         </div>
                         <div class="col-span-2">
                             <x-heroicon-o-chat-bubble-left-right class="w-5" />
@@ -74,7 +74,7 @@
                         <div class="col-span-10">
                             <span
                                 class="hover:text-[#5c3463] {{ request()->routeIs('testimoni') ? 'text-[#5c3463]' : '' }}"><a
-                                    href="{{ route('testimoni') }}" wire:navigate>Testimoni</a></span>
+                                    href="{{ route('testimoni') }}" wire:navigate>Testimonials</a></span>
                         </div>
                         <div class="col-span-2">
                             <x-heroicon-o-building-office-2 class="w-5" />
@@ -82,7 +82,7 @@
                         <div class="col-span-10">
                             <span
                                 class="hover:text-[#5c3463] {{ request()->routeIs('tentang') ? 'text-[#5c3463]' : '' }}"><a
-                                    href="{{ route('tentang') }}" wire:navigate>Tentang</a></span>
+                                    href="{{ route('tentang') }}" wire:navigate>About</a></span>
                         </div>
                         <div class="col-span-2">
                             <x-heroicon-o-phone class="w-5" />
@@ -90,7 +90,7 @@
                         <div class="col-span-10">
                             <span
                                 class="hover:text-[#5c3463] {{ request()->routeIs('kontak') ? 'text-[#5c3463]' : '' }}"><a
-                                    href="{{ route('kontak') }}" wire:navigate>Kontak</a></span>
+                                    href="{{ route('kontak') }}" wire:navigate>Contact</a></span>
                         </div>
                         <div class="col-span-2">
 
