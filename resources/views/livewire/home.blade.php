@@ -4,7 +4,8 @@
             <h2 x-typeit class="text-white text-xl md:text-4xl">Provide Best Service For Your Bussiness.
             </h2>
             <div class="md:-space-y-0 md:px-0">
-                <p class="text-sm font-normal">We possess the expertise to elevate your business, ensuring it’s not only reachable but also stands out on the global stage. </p>
+                <p class="text-sm font-normal">We possess the expertise to elevate your business, ensuring it’s not only
+                    reachable but also stands out on the global stage. </p>
             </div>
             <div class="w-full flex flex-col sm:flex-row mt-3 pe-2 h-[4rem] sm:w-[12rem] gap-2">
                 <a href="{{ route('produk') }}" wire:navigate
@@ -21,7 +22,7 @@
 
     <div class="col-span-7 mx-auto overflow-hidden">
         <div>
-            <img src="{{ asset('img/Nerd-amico.svg') }}" alt="" class="w-[20rem] md:w-[22rem]">
+            <img src="{{ asset('img/Business vision-rafiki.svg') }}" alt="" class="w-[20rem] md:w-[22rem]">
         </div>
     </div>
 </div>
