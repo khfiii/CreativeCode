@@ -12,7 +12,7 @@
                     <li class="hover:text-[#5c3463] {{ request()->routeIs($item) ? 'text-[#5c3463]' : '' }}"><a
                             href="{{ route($item) }}" wire:navigate>{{ $value }}</a></li>
                 @endforeach
-                <li class="hover:text-[#5c3463]"><a href="{{ route('login') }}" wire:navigate>Login</a></li>
+                {{-- <li class="hover:text-[#5c3463]"><a href="{{ route('login') }}" wire:navigate>Login</a></li> --}}
             </ul>
         </div>
     </div>
@@ -95,17 +95,17 @@
                         <div class="col-span-2">
 
                         </div>
-                        <div class="col-span-10">
+                        {{-- <div class="col-span-10">
                             <span class="hover:text-[#5c3463]"><a href="{{ route('login') }}"
                                     wire:navigate>Login</a></span>
-                        </div>
+                        </div> --}}
                         <div class="col-span-2">
 
                         </div>
-                        <div class="col-span-10">
+                        {{-- <div class="col-span-10">
                             <span class="hover:text-[#5c3463]"><a href="{{ route('register') }}"
                                     wire:navigate>Register</a></span>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
 

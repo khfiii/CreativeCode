@@ -24,4 +24,5 @@
             <img src="{{ asset('img/Nerd-amico.svg') }}" alt="" class="w-[20rem] md:w-[22rem]">
         </div>
     </div>
+
 </div>
