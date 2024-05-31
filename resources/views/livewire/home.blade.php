@@ -25,4 +25,5 @@
             <img src="{{ asset('img/Business vision-rafiki.svg') }}" alt="" class="w-[20rem] md:w-[22rem]">
         </div>
     </div>
+
 </div>

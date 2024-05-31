@@ -12,13 +12,6 @@ document.addEventListener('alpine:init', ()=>{
           .move(null, { to: "END" })
           .go();
 
-        //   instance.destroy();
-
-
-
-
-
-
     })
 
 

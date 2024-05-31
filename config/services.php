@@ -15,7 +15,7 @@ return [
     */
 
     'telegram' => [
-        'secret' => env('TELEGRAM_APP_KEY')
+        'secret' => env('TELEGRAM_APP_KEY', '02383483243')
     ],
 
     'mailgun' => [

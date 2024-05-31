@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Services\TelegramService;
 use Illuminate\Support\Facades\URL;
 use App\View\Components\layouts\app;
 use Illuminate\Support\Facades\Blade;
@@ -14,7 +15,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        //
+
     }
 
     /**
