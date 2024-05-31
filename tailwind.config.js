@@ -7,16 +7,16 @@ export default {
     ],
     theme: {
         extend: {
-            colors:{
-                primary : '#5c3463'
+            colors: {
+                primary: '#5c3463'
             },
             fontFamily: {
-                poppins: ["Poppins", "sans-serif"],
+                // poppins: ["Poppins", "sans-serif"],
             },
         },
     },
     daisyui: {
         themes: ["light", "dark", "cupcake"],
-      },
+    },
     plugins: [require("daisyui")],
 };

@@ -9,6 +9,7 @@
         "blade-ui-kit/blade-heroicons": "^2.3",
         "codeat3/blade-unicons": "^1.8",
         "defstudio/telegraph": "^1.41",
+        "filament/filament": "^3.2",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^10.10",
         "laravel/sanctum": "^3.3",
@@ -42,7 +43,8 @@
     "scripts": {
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
-            "@php artisan package:discover --ansi"
+            "@php artisan package:discover --ansi",
+            "@php artisan filament:upgrade"
         ],
         "post-update-cmd": [
             "@php artisan vendor:publish --tag=laravel-assets --ansi --force"
